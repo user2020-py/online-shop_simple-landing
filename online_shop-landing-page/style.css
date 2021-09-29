@@ -1,0 +1,174 @@
+/* Core */
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Header */
+header{
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    box-shadow: #000 7px -12px 36px;
+    z-index: 999;
+}
+
+.navigation-bar{
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo{
+    display: inline-block;
+    align-self: center;
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: bold;
+    
+}
+
+.navigation-bar__items{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation-bar__item{
+    list-style: none;
+    margin-left: 2rem;
+}
+
+#navigation-bar__item a{
+    text-decoration: none;
+    color: #000;
+}
+
+#dropdown-btn{
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.logo a{
+    color: #1E36A1;
+    text-decoration: none;
+}
+
+/* Main */
+.main-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.main-sec .image > img{
+    width: 550px;
+    margin-top: 1rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.info h1{
+    color: #1E36A1;
+    font-size: xxx-large;
+    margin: 0;
+}
+
+.info p{
+    width: 30rem;
+    color: #797979;
+}
+
+.info > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.info button{
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 70px;
+    padding: 15px 0;
+    width: 150px;
+    cursor: pointer;
+    background-color: #1E36A1;
+    color: #fff;
+    font-weight: bold;
+    align-self: center;
+    transition-duration: 0.5s;
+}
+
+.info button:hover{
+    background-color: #F250AE;
+    color: #000;
+}
+
+.info button:active{
+    background-color: #9D26F2;
+}
+
+/* Mobile: Responseve - Main section*/
+@media (max-width: 1110px) {
+    .main-sec{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .main-sec .image > img{
+        width: 100%;
+    }
+
+    .info{
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .info p{
+        width: 100%;
+    }
+}
+
+/* Mobile: Responseve - Navbar*/
+@media (max-width: 565px) {
+    #dropdown-btn{
+        position: relative;
+        visibility: visible;
+        float: right;
+        z-index: 2;
+    }
+
+    .navigation-bar, .navigation-bar__items{
+        display: block;
+    }
+
+    #navigation-bar__item {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .navigation-bar__items{
+        margin-top: -130px;
+        opacity: 0;
+        transition-duration: 1s;
+    }
+}

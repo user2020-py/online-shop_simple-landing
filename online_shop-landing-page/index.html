@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Online Shop</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="container">
+            <header>
+                <nav class="navigation-bar">
+                    <div class="logo">
+                        <a href="#">
+                            <span>Shop24</span>
+                        </a>
+                    </div>
+                    <div id="dropdown-btn" onclick="setStyle()">
+                        <i class="fas fa-bars" id="dropdown_icon"></i>
+                    </div>
+                    <ul class="navigation-bar__items" id="navigation-bar__items" >
+                        <li id="navigation-bar__item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li id="navigation-bar__item">
+                            <a href="#">About us</a>
+                        </li>
+                        <li id="navigation-bar__item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li id="navigation-bar__item">
+                            <a href="#">Info</a>
+                        </li>
+                        <li id="navigation-bar__item">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        <!-- Main -->
+        <div class="container">
+            <section class="main-sec" id="main-sec">
+                <div class="info">
+                    <div>
+                        <h1>Online<br>shopping</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Nobis, laudantium optio neque fuga tenetur vel porro amet quidem!
+                            Repudiandae, impedit odit? Sapiente sit
+                            explicabo dolores repellendus illo nam voluptate sed.
+                        </p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="shop-icon.png" alt="shop">
+                </div>
+            </section>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
